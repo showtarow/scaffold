@@ -1,7 +1,7 @@
 module.exports= (grunt)->
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
-    notify_hooks: options: enabled: on, success: on, title: "site"
+    notify_hooks: options: enabled: on, success: on, title: "Grunt通知"
     bower:
       install:
         options:

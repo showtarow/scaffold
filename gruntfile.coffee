@@ -47,13 +47,14 @@ module.exports= (grunt)->
         src: "src/scss/**/*.scss"
         options: bundleExec: on, config: "compass_development.rb"
     php:
-      server: options: port: 3000, hostname: 'showtarow.local', base: "public" #, router: "router.php"
-      serverWp: options: port: 3030, hostname: 'showtarow.local', base: "wp" #, router: "router.php"
+      hostName: '**ENTER YOUR HOST(eg. computername.local, localhost, 192.168.1.1, etc...)**'
+      server: options: port: 3000, hostname: <%= php.hostName %>, base: "public" #, router: "router.php"
+      serverWp: options: port: 3030, hostname: <%= php.hostName %>, base: "wp" #, router: "router.php"
     connect:
       front:
-        options: port:30000, hostname: 'showtarow.local', livereload: on, open: off, middleware: ->
+        options: port:30000, hostname: <%= php.hostName %>, livereload: on, open: off, middleware: ->
             [require('grunt-connect-proxy/lib/utils').proxyRequest]
-      proxies: [context: "/",host: 'showtarow.local', port: 3000, changeOrigin: on]
+      proxies: [context: "/",host: <%= php.hostName %>, port: 3000, changeOrigin: on]
 
     esteWatch:
       options:

@@ -20,7 +20,9 @@ node_modules/*
 .sass-cache/*
 !.keep
 
-#--server files----------------
+#--theme files----------------
+theme/style.css
+
 #art_server.php
 #public/js
 #public/css

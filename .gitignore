@@ -9,6 +9,8 @@ Thumbs.db
 #misc
 WORK/*
 
+wp-cli.yml
+
 #frontend files
 vendor/*
 tmp/*
@@ -16,17 +18,17 @@ bower_components/*
 node_modules/*
 .bundle/*
 .sass-cache/*
-src/**/*
 !.keep
 
 #--server files----------------
-art_server.php
-public/js
-public/css
-public/vendor
-public/tmp/*
-!.keep
-public/wp-content
+#art_server.php
+#public/js
+#public/css
+#public/vendor
+#public/tmp/*
+#!.keep
+#public/wp-content
+
 wp
 
 

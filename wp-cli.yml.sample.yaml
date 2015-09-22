@@ -17,7 +17,6 @@ core config:
   dbcollate:
   dbprefix: wp_
   locale: ja
-  skip-salts: true
 
 core install:
   url: 'http://localhost:3000'

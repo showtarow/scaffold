@@ -22,6 +22,7 @@ node_modules/*
 
 #--theme files----------------
 theme/style.css
+theme/vendor
 
 #art_server.php
 #public/js
@@ -32,6 +33,3 @@ theme/style.css
 #public/wp-content
 
 wp
-
-
-
